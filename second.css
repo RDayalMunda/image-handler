@@ -1,0 +1,103 @@
+
+.image-drag-canvas {
+    position: relative;
+    background-color: rgb(44, 44, 44);
+    background: rgb(188, 188, 188);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.movable-obj {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 150px;
+    height: 100px;
+    user-select: none;
+    border: 1px solid #0007;
+}
+.image-drag-canvas .palette{
+    position: absolute;
+    background-color: #0006;
+    background: #0006;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px;
+}
+.image-drag-canvas .palette .tool {
+    background-color: rgb(59, 79, 118);
+    background: rgb(59, 79, 118);
+    width: 20px;
+    height: 20px;
+}
+
+.dragger-handle-group {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 20px;
+    border: 1px solid #0002;
+}
+
+.dragger-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(44, 148, 51, 0.295);
+    background-color: rgba(44, 148, 51, 0.295);
+    border: 1px solid rgb(255, 255, 255);
+    margin: -5px;
+    cursor: grab;
+}
+
+.dragger-handle:active {
+    cursor: grabbing;
+}
+
+.dragger-handle.rotate {
+    border-radius: 50%;
+    top: -30px;
+    left: 50%;
+}
+
+.dragger-handle.tl {
+    top: 0%;
+    left: 0%;
+}
+
+.dragger-handle.tr {
+    top: 0%;
+    left: 100%;
+}
+
+.dragger-handle.tm {
+    top: 0%;
+    left: 50%;
+}
+
+.dragger-handle.bl {
+    top: 100%;
+    left: 0%;
+}
+
+.dragger-handle.br {
+    top: 100%;
+    left: 100%;
+}
+
+.dragger-handle.bm {
+    top: 100%;
+    left: 50%;
+}
+
+.dragger-handle.lm {
+    top: 50%;
+    left: 0%;
+}
+
+.dragger-handle.rm {
+    top: 50%;
+    left: 100%;
+}
